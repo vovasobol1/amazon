@@ -10,6 +10,6 @@ export class AuthController {
   @Post('register')
   @HttpCode(200)
   async register(@Body() dto : AuthDto){
-     return this.authService.register();
+     return this.authService.register(dto);
   }
 }
